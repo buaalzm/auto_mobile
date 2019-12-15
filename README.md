@@ -15,4 +15,4 @@
 3. 针对不同的任务，记录不同的动作文件，动作文件导入后应可以批量执行
 
 程序上传到了：https://github.com/buaalzm/auto_mobile
-博客连接：
+博客连接：https://blog.csdn.net/qq_33833073/article/details/103553273
