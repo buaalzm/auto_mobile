@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>898</width>
-    <height>655</height>
+    <height>830</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,8 +17,8 @@
    <widget class="ImageLabel" name="screenLabel">
     <property name="geometry">
      <rect>
-      <x>460</x>
-      <y>40</y>
+      <x>420</x>
+      <y>10</y>
       <width>191</width>
       <height>371</height>
      </rect>
@@ -30,63 +30,126 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QPushButton" name="getScreenShotPushButton">
+   <widget class="QWidget" name="actionLoadWidget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>180</y>
+      <width>291</width>
+      <height>251</height>
+     </rect>
+    </property>
+    <widget class="QWidget" name="">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>271</width>
+       <height>225</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QPushButton" name="fileAddPushButton">
+          <property name="text">
+           <string>添加</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="fileRemovePushButton">
+          <property name="text">
+           <string>移除</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QTreeWidget" name="taskTreeWidget">
+        <column>
+         <property name="text">
+          <string>任务列表</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string/>
+         </property>
+        </column>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="">
     <property name="geometry">
      <rect>
       <x>60</x>
       <y>70</y>
-      <width>91</width>
-      <height>23</height>
+      <width>271</width>
+      <height>112</height>
      </rect>
     </property>
-    <property name="text">
-     <string>获取屏幕</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="returnHomePushButton">
-    <property name="geometry">
-     <rect>
-      <x>170</x>
-      <y>70</y>
-      <width>75</width>
-      <height>23</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>返回桌面</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="returnPushButton">
-    <property name="geometry">
-     <rect>
-      <x>260</x>
-      <y>70</y>
-      <width>75</width>
-      <height>23</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>返回上一级</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="recordActionPushButton">
-    <property name="geometry">
-     <rect>
-      <x>60</x>
-      <y>120</y>
-      <width>101</width>
-      <height>23</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>开始录制动作</string>
-    </property>
-    <property name="checkable">
-     <bool>true</bool>
-    </property>
-    <property name="checked">
-     <bool>true</bool>
-    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QPushButton" name="adbTestPushButton">
+       <property name="text">
+        <string>测试连接</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QPushButton" name="getScreenShotPushButton">
+       <property name="text">
+        <string>获取屏幕</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QPushButton" name="returnHomePushButton">
+       <property name="text">
+        <string>返回桌面</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QPushButton" name="returnPushButton">
+       <property name="text">
+        <string>返回上一级</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QPushButton" name="recordActionPushButton">
+       <property name="text">
+        <string>开始录制动作</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QPushButton" name="actionStartPushButton">
+       <property name="text">
+        <string>开始执行</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QPushButton" name="taskStopPushButton">
+       <property name="text">
+        <string>任务终止</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">

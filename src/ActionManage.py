@@ -24,7 +24,7 @@ class ActionManage():
         if len(paramlist)<5:
             print('parameter error')
             return
-        action = {'action name': 'delay'}
+        action = {'action name': 'swipe'}
         action['param'] = paramlist
         action['cmd'] = 'adb shell input swipe {} {} {} {} {}'.format(*paramlist)
         self.tempAction['action set'].append(action)
